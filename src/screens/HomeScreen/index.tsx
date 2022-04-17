@@ -6,8 +6,13 @@ import {
     ContainerStyled, LogoStyled 
 } from "./HomeScreen.style";
 
-const HomeScreen = () => {
+type Props = {
+    data: any, 
+    date: string
+}
+const HomeScreen = ({ data } : Props) => {
     const [searchValue, setSearchValue] = useState('');
+    console.log('[HomeScreen]: data => ', data);
     return (
         <ContainerStyled>
             <LogoStyled 
@@ -19,6 +24,17 @@ const HomeScreen = () => {
                 value={searchValue}
                 onChange={(event) => setSearchValue(event.target.value)}
             /> 
+            <ul>
+                {
+                    data && data.results.map((x : any) => (
+                        <li key={x.title}>
+                            {x.title}
+                            <br />
+                            {x.link}
+                        </li>
+                    ))
+                }
+            </ul>
         </ContainerStyled>
     )
 }
