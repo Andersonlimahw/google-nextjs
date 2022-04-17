@@ -12,12 +12,12 @@ const HomeScreen = () => {
     const router = useRouter();
     const [searchValue, setSearchValue] = useState('');
   
-    function redirecToSearchResultPage(event:any) {
+    function redirectToSearchResultPage(event:any) {
         event.preventDefault();
         router.push({
             pathname: '/search', 
             query: {
-                query: searchValue,
+                searchValue: searchValue,
             },
         }, 'search')
     }
@@ -28,7 +28,7 @@ const HomeScreen = () => {
                 alt="logo"
             />
             <form 
-                onSubmit={redirecToSearchResultPage}
+                onSubmit={redirectToSearchResultPage}
             >
                 <Input 
                     type="text"
