@@ -9,4 +9,10 @@ export const LogoStyled = styled.img`
 export const ContainerStyled = styled.div`
     min-height: 80vh;
     width: 100vw;
+
+    form {
+        width: 100vw;
+        margin: auto;
+        text-align: center;
+    }
 `;
