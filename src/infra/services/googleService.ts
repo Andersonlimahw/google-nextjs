@@ -29,6 +29,5 @@ const googleService = async ({ search } : SearchProps) => {
     } finally {
         console.log('[Finally][googleService: request finished]')
     }
-   
 };
 export default googleService;

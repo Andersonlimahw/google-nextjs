@@ -1,6 +1,7 @@
 import React, { InputHTMLAttributes } from 'react';
 import {
-    InputStyled
+    InputStyled, 
+    IconStyled
 } from './Input.style';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -9,7 +10,10 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 export const Input : React.FC<InputProps> = (props: InputProps) => {
     return (
-        <InputStyled {...props}/>
+        <>
+            <IconStyled />
+            <InputStyled {...props}/>
+        </>
     )
 }
 
