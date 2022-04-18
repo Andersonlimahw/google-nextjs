@@ -5,7 +5,7 @@ export default SearchResultScreen;
 
 export async function getServerSideProps(context : NextPageContext) {
     const query = context.query;
-    const searchValue = query.searchValue ?? 'Steve Jobs';
+    const searchValue = query.searchValue ?? 'andersonlimahw';
     const searchResult =
         await googleService({ search: searchValue.toString() })
             .then(data => data);

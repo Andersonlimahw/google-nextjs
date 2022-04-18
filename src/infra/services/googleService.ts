@@ -6,7 +6,7 @@ const options = {
 	method: 'GET',
 	headers: {
 		'X-User-Agent': 'desktop',
-		'X-Proxy-Location': 'EU',
+		'X-Proxy-Location': 'BR',
 		'X-RapidAPI-Host': 'google-search3.p.rapidapi.com',
 		'X-RapidAPI-Key': 'f7f188c34cmshe540af240fecaffp1f0228jsnf976f10f2829'
 	}

@@ -21,7 +21,7 @@ const SearchResultScreen = ({ data, date }: Props) => {
               title={x.title}
               description={x.description}
               link={x.link}
-              cite={`${x.cite.domain}`}
+              cite={`${x.cite.domain ?? "..."}`}
             />
           ))}
       </div>

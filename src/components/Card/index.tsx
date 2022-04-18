@@ -15,7 +15,11 @@ const Card = ({ title, description, link, cite} : CardProps) => {
     return(
         <CardContainer>
             <CardTitle>
-                <a href={link}>
+                <a
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     {title}
                 </a>
             </CardTitle>

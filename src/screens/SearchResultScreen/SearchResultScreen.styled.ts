@@ -6,6 +6,7 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 16px;
 `;
 
 export const ContainerItem = styled.div`
