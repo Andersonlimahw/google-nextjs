@@ -15,7 +15,7 @@ export const Loading = ({ itemsLength }: LoadingProps) => {
             title="Carrregando..."
             description="..."
             link=""
-            cite="..."
+            cite="... | ..."
          />
         ))}
       </ContainerItem>
