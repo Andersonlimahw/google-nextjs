@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
     border: 1px solid ${(props) => props.theme.colors.primary['050']};
     border-radius: 8px;
     box-shadow: 2px 4px 2px ${(props) => props.theme.colors.neutral['050']};
-    margin: 16px auto;
+    margin: 32px auto;
 `;
 
 export const CardHeader = styled.div`

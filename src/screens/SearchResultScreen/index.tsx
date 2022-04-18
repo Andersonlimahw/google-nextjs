@@ -1,8 +1,7 @@
 import Card from "../../components/Card";
 import SearchModel from "../../domain/models/searchModel";
 import {
-  Container,
-  ContainerItem
+  Container
 } from './SearchResultScreen.styled';
 
 type Props = {
@@ -13,14 +12,6 @@ const SearchResultScreen = ({ data, date }: Props) => {
   console.log("[SearchResultScreen]: data => ", data);
   return (
     <Container>
-      <ContainerItem>
-        <h1>
-          Results &nbsp;
-          <small>
-            updated at: {date}
-          </small>
-        </h1>
-      </ContainerItem>
       <div>
         {data &&
           data.results.map((x: SearchModel, index: number) => (
