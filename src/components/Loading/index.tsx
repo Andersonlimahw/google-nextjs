@@ -12,7 +12,7 @@ export const Loading = ({ itemsLength }: LoadingProps) => {
         {Array.from({ length: itemsLength }).map((x, index: number) => (
           <Card
             key={`${index}_${x}`}
-            title="Carrregando..."
+            title="Loading..."
             description="..."
             link=""
             cite="..."

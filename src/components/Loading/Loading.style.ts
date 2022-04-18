@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
@@ -16,4 +16,5 @@ export const Container = styled.div`
 export const ContainerItem = styled.div`
     flex-grow: 1;
     padding: 16px 0;
+    min-width: 100%;
 `;
