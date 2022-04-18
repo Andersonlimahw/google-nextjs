@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-    /* background: ${(props) => props.theme.colors.primary['050']};
-    color: ${(props) => props.theme.colors.neutral['000']}; */
     background: ${(props) => props.theme.colors.neutral['050']};
     color: ${(props) => props.theme.colors.primary['050']};
     font-weight: 500;
@@ -11,6 +9,27 @@ export const CardContainer = styled.div`
     border-radius: 8px;
     box-shadow: 2px 4px 2px ${(props) => props.theme.colors.neutral['050']};
     margin: 16px auto;
+`;
+
+export const CardHeader = styled.div`
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+`;
+
+
+export const CardHeaderICon = styled.div`
+    text-align: center;
+    vertical-align: center;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    background-color: ${(props : any) => props['data-color']};
+    border-radius:  60%;
+    margin-right: 8px;
+    color: ${(props) => props.theme.colors.primary['050']};
+    cursor: pointer;
 `;
 
 export const CardTitle = styled.h3`

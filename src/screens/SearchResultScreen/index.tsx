@@ -13,6 +13,14 @@ const SearchResultScreen = ({ data, date }: Props) => {
   console.log("[SearchResultScreen]: data => ", data);
   return (
     <Container>
+      <ContainerItem>
+        <h1>
+          Results &nbsp;
+          <small>
+            updated at: {date}
+          </small>
+        </h1>
+      </ContainerItem>
       <div>
         {data &&
           data.results.map((x: SearchModel, index: number) => (

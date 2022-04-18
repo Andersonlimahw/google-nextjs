@@ -1,8 +1,9 @@
 import styled from "styled-components";
 export const LogoStyled = styled.img`
     width: auto;
+    max-width: 272px;
     height: auto;
-    margin: auto 16px;
+    margin: 32px auto;
     padding: 8px ${(props) => props.theme.space.x4};
 `;
 

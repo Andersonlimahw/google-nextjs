@@ -11,4 +11,6 @@ export const Container = styled.div`
 
 export const ContainerItem = styled.div`
     flex-grow: 4;
+    color: #fff;
+    padding:16px 0;
 `;
