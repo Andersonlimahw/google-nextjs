@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import {
     Input
@@ -11,7 +11,7 @@ import {
 const HomeScreen = () => {
     const router = useRouter();
     const [searchValue, setSearchValue] = useState('');
-  
+
     function redirectToSearchResultPage(event:any) {
         event.preventDefault();
         router.push({
@@ -21,23 +21,29 @@ const HomeScreen = () => {
             },
         }, 'search')
     }
+
+    function handleSearchOnBlur(event : any) {
+        if(searchValue && searchValue.length > 1) {
+            redirectToSearchResultPage(event);
+        }
+    }
     return (
         <ContainerStyled>
-            <LogoStyled 
-                src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+            <LogoStyled
+                src="/images/google_logo.png"
                 alt="logo"
             />
-            <form 
+            <form
                 onSubmit={redirectToSearchResultPage}
             >
-                <Input 
+                <Input
                     type="text"
+                    placeholder='let me google it for you'
                     value={searchValue}
                     onChange={(event : any) => setSearchValue(event.target.value)}
-                /> 
+                    onBlur={handleSearchOnBlur}
+                />
             </form>
-           
-           
         </ContainerStyled>
     )
 }

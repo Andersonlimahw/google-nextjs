@@ -10,7 +10,7 @@ const Head = ({title, children } : Props) => (
         <meta name="description" content="A Google clone with nextjs" />
         <meta name="keywords" content="Nextjs, Google, next, react, reactjs, andersonlimahw, github, front-end" />
         <meta name="author" content="Anderson Lima" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#121212"></meta>
         <title>
             {title}

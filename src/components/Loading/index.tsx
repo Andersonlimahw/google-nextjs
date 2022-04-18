@@ -10,12 +10,12 @@ export const Loading = ({ itemsLength }: LoadingProps) => {
     <Container>
       <ContainerItem>
         {Array.from({ length: itemsLength }).map((x, index: number) => (
-          <Card 
+          <Card
             key={`${index}_${x}`}
             title="Carrregando..."
             description="..."
             link=""
-            cite="... | ..."
+            cite="..."
          />
         ))}
       </ContainerItem>

@@ -52,7 +52,7 @@ export default function GlobalStyle() {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          align-items: stretch;
+          align-items: flex-start;
         }
       `}</style>
     )

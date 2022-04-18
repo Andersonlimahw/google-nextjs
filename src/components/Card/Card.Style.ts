@@ -10,6 +10,8 @@ export const CardContainer = styled.div`
     box-shadow: 2px 4px 2px ${(props) => props.theme.colors.neutral['050']};
     margin: 32px auto;
     width: 100%;
+    max-width: 100%;
+    min-width: 100%;
 `;
 
 export const CardHeader = styled.div`
@@ -17,6 +19,8 @@ export const CardHeader = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
 `;
 
 
@@ -34,6 +38,7 @@ export const CardHeaderICon = styled.div`
 `;
 
 export const CardTitle = styled.h3`
+    flex: 1;
     padding: 8px 0;
     color: ${(props) => props.theme.colors.primary['050']};
 

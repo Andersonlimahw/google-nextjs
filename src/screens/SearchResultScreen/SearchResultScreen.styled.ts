@@ -2,19 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     padding: 16px 32px;
-
-    @media(max-width: 1024px) {
-        padding: 16px 16px;
-    }
+    max-width: 100%;
+    width: 100%;
 `;
 
 export const ContainerItem = styled.div`
-    flex-grow: 1;
-    color: #fff;
     padding: 16px 0;
+    flex: 1;
+    width: 100%;
 `;
