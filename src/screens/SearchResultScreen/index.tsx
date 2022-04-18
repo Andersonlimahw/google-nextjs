@@ -1,7 +1,8 @@
 import Card from "../../components/Card";
 import SearchModel from "../../domain/models/searchModel";
 import {
-  Container
+  Container,
+  ContainerItem
 } from './SearchResultScreen.styled';
 
 type Props = {
@@ -12,7 +13,7 @@ const SearchResultScreen = ({ data, date }: Props) => {
   console.log("[SearchResultScreen]: data => ", data);
   return (
     <Container>
-      <div>
+      <ContainerItem>
         {data &&
           data.results.map((x: SearchModel, index: number) => (
             <Card
@@ -23,7 +24,7 @@ const SearchResultScreen = ({ data, date }: Props) => {
               cite={`${x.cite.domain ?? "..."}`}
             />
           ))}
-      </div>
+      </ContainerItem>
     </Container>
   );
 };
