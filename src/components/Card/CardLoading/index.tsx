@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardHeaderICon,
   CardTitle,
-} from "../Card.style";
+} from "../Card.Style";
 
 export const CardLoading = () => {
   return (

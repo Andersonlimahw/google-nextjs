@@ -7,7 +7,7 @@ import {
   CardTitle,
   CardDescription,
   CardCite,
-} from "./Card.style";
+} from "./Card.Style";
 
 type CardProps = {
   title: string;
