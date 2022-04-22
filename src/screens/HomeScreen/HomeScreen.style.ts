@@ -10,11 +10,3 @@ export const ContainerStyled = styled.div`
         text-align: center;
     }
 `;
-
-export const LogoStyled = styled.img`
-    width: auto;
-    max-width: 272px;
-    height: auto;
-    margin: 30vh auto 32px auto;
-    padding: 8px ${(props) => props.theme.space.x4};
-`;

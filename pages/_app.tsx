@@ -6,7 +6,7 @@ import { theme } from '../src/theme/theme';
 import GlobalStyle from '../src/theme/globalStyle';
 import Head from '../src/infra/components/Head';
 import { Loading } from '../src/components/Loading';
-
+import { Footer } from '../src/patterns/Footer';
 function SearchApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -43,6 +43,7 @@ function SearchApp({ Component, pageProps }: AppProps) {
           </>
         )
       }
+      <Footer />
     </ThemeProvider>
   )
 }

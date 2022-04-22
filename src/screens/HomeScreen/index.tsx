@@ -3,9 +3,10 @@ import { useRouter } from 'next/router';
 import {
     Input
 } from '../../components/Input';
-import { 
-    ContainerStyled, LogoStyled 
+import {
+    ContainerStyled
 } from "./HomeScreen.style";
+import { Logo } from '../../components/Logo';
 
 
 const HomeScreen = () => {
@@ -29,10 +30,7 @@ const HomeScreen = () => {
     }
     return (
         <ContainerStyled>
-            <LogoStyled
-                src="/images/google_logo.png"
-                alt="logo"
-            />
+            <Logo />
             <form
                 onSubmit={redirectToSearchResultPage}
             >

@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes } from 'react';
 import {
-    InputStyled, 
+    InputStyled,
     IconStyled
 } from './Input.style';
 

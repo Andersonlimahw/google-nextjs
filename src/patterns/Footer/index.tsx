@@ -1,11 +1,10 @@
-type Props = {
-    title:string;
-}
-
-const Footer = ({ title } : Props) => (
-    <footer>
-        {title}
-    </footer>
+import {
+    FooterStyled
+} from './Footer.styled'
+export const Footer = () => (
+    <FooterStyled>
+        Anderson Lima | {new Date().getFullYear()}
+    </FooterStyled>
 );
 
 export default Footer;

@@ -11,6 +11,11 @@ export const InputStyled = styled.input`
     font-size: ${(props) => props.theme.typography.variants.body4};
     border-radius: ${(props) => props.theme.space.x10};
     outline: none;
+    ::placeholder {
+        color: ${(props) => props.theme.colors.neutral['050']};
+        font-style: italic;
+        font-weight: 100;
+    }
 `;
 
 export const IconStyled = styled.span`
