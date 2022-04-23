@@ -8,7 +8,7 @@ const Head = ({title, children } : Props) => (
     <NextHead>
         <meta charSet="UTF-8" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
-        <meta name="description" content="A Google clone with nextjs" />
+        <meta name="description" content="A Google clone with nextjs by 🍋  Lemon" />
         <meta name="keywords" content="Nextjs, Google, next, react, reactjs, andersonlimahw, github, front-end" />
         <meta name="author" content="Anderson Lima" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />

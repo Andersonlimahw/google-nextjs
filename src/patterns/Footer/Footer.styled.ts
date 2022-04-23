@@ -25,11 +25,11 @@ export const FooterIconStyled = styled.img`
     height: 24px;
     width: 24px;
     animation: transition ease-in 0.5s;
-
+    border: 1px solid ${(props) => props.theme.colors.neutral['050']};
+    border-radius: 50%;
     &:hover {
         transform: scale(1.2);
         cursor: pointer;
-        border: 2px solid ${(props) => props.theme.colors.neutral['050']};
-        border-radius: 50%;
+        border: 2px solid ${(props) => props.theme.colors.neutral['400']};
     }
 `;
