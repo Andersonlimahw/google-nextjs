@@ -12,3 +12,24 @@ export const FooterStyled = styled.footer`
     width: 100%;
     align-items: center !important;
 `;
+
+export const FooterIconsContainerStyled = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+`;
+
+export const FooterIconStyled = styled.img`
+    flex: 1;
+    margin: 16px;
+    height: 24px;
+    width: 24px;
+    animation: transition ease-in 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        border: 2px solid ${(props) => props.theme.colors.neutral['050']};
+        border-radius: 50%;
+    }
+`;
