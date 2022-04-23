@@ -4,7 +4,10 @@ export const InputStyled = styled.input`
     width: 90vw;
     margin: auto;
     border: 2px solid ${(props) => props.theme.colors.neutral['050']};
-    padding: ${(props) => props.theme.space.x6} ${(props) => props.theme.space.x12};
+    padding-left: 64px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 64px;
     background: ${(props) => props.theme.colors.primary['900']};
     color: ${(props) => props.theme.colors.neutral['050']};
     font-family: ${(props) => props.theme.typography.fontFamily};
