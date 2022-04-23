@@ -7,7 +7,7 @@ export const FooterStyled = styled.footer`
     border-top: 2px solid ${(props) => props.theme.colors.neutral['900']};
     padding: 32px;
     margin: auto;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
     align-items: center !important;
