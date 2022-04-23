@@ -4,7 +4,7 @@ export const InputStyled = styled.input`
     width: 90vw;
     margin: auto;
     border: 2px solid ${(props) => props.theme.colors.neutral['050']};
-    padding: ${(props) => props.theme.space.x6} ${(props) => props.theme.space.x10};
+    padding: ${(props) => props.theme.space.x6} ${(props) => props.theme.space.x12};
     background: ${(props) => props.theme.colors.primary['900']};
     color: ${(props) => props.theme.colors.neutral['050']};
     font-family: ${(props) => props.theme.typography.fontFamily};
@@ -18,11 +18,14 @@ export const InputStyled = styled.input`
     }
 `;
 
-export const IconStyled = styled.span`
-    &::before {
-        content: "🔍";
-        display: inline-flex;
-        position: relative;
-        margin-right: -30px;
-    }
+export const IconStyled = styled.div`
+    background-image: url('/icons/search.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 50px;
+    margin-top: 22px;
 `;
