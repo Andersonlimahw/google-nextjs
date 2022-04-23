@@ -33,7 +33,7 @@ export const IconStyled = styled.div`
     left: 50px;
     margin-top: 22px;
 
-    @media (min-width: 1100px){
+    @media (min-width: 1025px){
         display: none;
     }
 `;
