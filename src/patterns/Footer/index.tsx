@@ -17,7 +17,7 @@ export const Footer = () => (
                     />
                 </a>
                 <a
-                    href='https://www.linkedin.com/in/anderson-lima-4b572651'
+                    href='https://www.linkedin.com/in/andersonlimahw'
                     target='_blank' rel="noreferrer"
                 >
                     <FooterIconStyled
