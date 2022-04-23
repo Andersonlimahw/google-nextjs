@@ -7,8 +7,8 @@ export const Container = styled.div`
     justify-content: flex-start;
     align-items: flex-end;
     padding: 16px 32px 88px 16px;
-    max-width: 100%;
-    width: 100%;
+    max-width: 1200px;
+    width: auto;
 `;
 
 export const ContainerItem = styled.div`

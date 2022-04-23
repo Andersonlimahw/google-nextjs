@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const InputStyled = styled.input`
     width: 90vw;
+    max-width: 1200px;
     margin: auto;
     border: 2px solid ${(props) => props.theme.colors.neutral['050']};
     padding-left: 64px;
@@ -31,4 +32,8 @@ export const IconStyled = styled.div`
     position: absolute;
     left: 50px;
     margin-top: 22px;
+
+    @media (min-width: 1100px){
+        display: none;
+    }
 `;
