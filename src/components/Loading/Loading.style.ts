@@ -7,9 +7,14 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: flex-end;
     padding: 16px 32px 176px 16px;
+    max-width: 1200px;
+    min-width: 50vw;
+    width: auto;
+    margin: 16px auto;
 
     @media(max-width: 1024px) {
         padding: 16px 16px;
+        min-width: 90vw;
     }
 `;
 

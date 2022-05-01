@@ -12,28 +12,13 @@ export const InputStyled = styled.input`
     background: ${(props) => props.theme.colors.primary['900']};
     color: ${(props) => props.theme.colors.neutral['050']};
     font-family: ${(props) => props.theme.typography.fontFamily};
-    font-size: ${(props) => props.theme.typography.variants.body4};
+    font-size: ${(props) => props.theme.typography.variants.body1};
     border-radius: ${(props) => props.theme.space.x10};
     outline: none;
     ::placeholder {
         color: ${(props) => props.theme.colors.neutral['050']};
         font-style: italic;
         font-weight: 100;
-    }
-`;
-
-export const IconStyled = styled.div`
-    background-image: url('/icons/search.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 50px;
-    margin-top: 22px;
-
-    @media (min-width: 1025px){
-        display: none;
+        font-size: ${(props) => props.theme.typography.variants.body1};
     }
 `;
